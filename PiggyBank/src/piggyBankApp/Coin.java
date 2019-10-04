@@ -3,6 +3,7 @@ package piggyBankApp;
 public abstract class Coin
 {
     protected int quantity;
+    protected double value;
     
     public Coin(int quantity)
     {
@@ -17,6 +18,11 @@ public abstract class Coin
     public int getQuantity()
     {
         return quantity;
+    }
+
+    public double getTotalValue()
+    {
+        return quantity * value;
     }
 
     public void setQuantity(int quantity)

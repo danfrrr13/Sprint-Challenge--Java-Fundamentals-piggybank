@@ -2,21 +2,17 @@ package piggyBankApp;
 
 public class Nickel extends Coin
 {
-    public double value = 0.05;
 
     public Nickel(int quantity)
     {
         super(quantity);
+        value = 0.05;
     }
 
     public Nickel()
     {
         super();
-    }
-
-    public double getTotalValue()
-    {
-        return quantity * value;
+        value = 0.05;
     }
 
     @Override

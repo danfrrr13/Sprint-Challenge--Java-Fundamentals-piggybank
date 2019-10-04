@@ -2,21 +2,16 @@ package piggyBankApp;
 
 public class Dollar extends Coin
 {
-    public double value = 1.00;
-
     public Dollar(int quantity)
     {
         super(quantity);
+        value = 1.00;
     }
 
     public Dollar()
     {
         super();
-    }
-
-    public double getTotalValue()
-    {
-        return quantity * value;
+        value = 1.00;
     }
 
     @Override

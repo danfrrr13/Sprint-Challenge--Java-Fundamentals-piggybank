@@ -2,21 +2,16 @@ package piggyBankApp;
 
 public class Dime extends Coin
 {
-    public double value = 0.10;
-
     public Dime(int quantity)
     {
         super(quantity);
+        value = 0.10;
     }
 
     public Dime()
     {
         super();
-    }
-
-    public double getTotalValue()
-    {
-        return quantity * value;
+        value = 0.10;
     }
 
     @Override

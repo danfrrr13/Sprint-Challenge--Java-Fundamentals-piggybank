@@ -2,21 +2,17 @@ package piggyBankApp;
 
 public class Quarter extends Coin
 {
-    public double value = 0.25;
 
     public Quarter(int quantity)
     {
         super(quantity);
+        value = 0.25;
     }
 
     public Quarter()
     {
         super();
-    }
-
-    public double getTotalValue()
-    {
-        return quantity * value;
+        value = 0.25;
     }
 
     @Override
