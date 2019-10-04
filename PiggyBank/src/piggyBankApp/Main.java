@@ -1,11 +1,13 @@
 package piggyBankApp;
 
 import java.util.*;
+import java.text.DecimalFormat;
 
 public class Main
 {
     public static void main(String[] args)
     {
+        DecimalFormat fp = new DecimalFormat("$###,###.00");
         ArrayList<Coin> myList = new ArrayList<Coin>();
 
         myList.add(new Quarter());
@@ -43,6 +45,6 @@ public class Main
             }
         }
 
-        System.out.println("\n\nThe piggy bank holds $" + total);
+        System.out.println("\n\nThe piggy bank holds $" + fp.format(total));
     }
 }
